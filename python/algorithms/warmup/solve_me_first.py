@@ -1,8 +1,7 @@
-def solveMeFirst(a, b):
+def solve_me_first(a, b):
     return a + b
-
 
 num1 = input()
 num2 = input()
-res = solveMeFirst(num1, num2)
+res = solve_me_first(num1, num2)
 print res
