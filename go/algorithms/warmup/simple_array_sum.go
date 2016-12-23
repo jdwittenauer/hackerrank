@@ -1,6 +1,27 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+	"os"
+	"bufio"
+	"strings"
+	"strconv"
+)
 
 func main() {
-	fmt.Println("Testing")
+	var n uint32
+	fmt.Scanf("%v\n", &n)
+	var s = bufio.NewScanner(os.Stdin)
+	s.Scan()
+	var line = s.Text()
+	var inputs = strings.Split(line, " ")
+	var sum = 0
+	for _, i := range inputs {
+		value, err := strconv.Atoi(i)
+		if err != nil {
+			panic(err)
+		}
+		sum += value
+	}
+	fmt.Println(sum)
 }
