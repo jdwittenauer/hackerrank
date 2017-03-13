@@ -13,8 +13,8 @@ func main() {
 	fmt.Scanf("%v\n", &n)
 	var s = bufio.NewScanner(os.Stdin)
 	s.Scan()
-	var line = s.Text()
-	var inputs = strings.Split(line, " ")
+	var inputs = strings.Split(s.Text(), " ")
+
 	var sum = 0
 	for _, i := range inputs {
 		value, err := strconv.Atoi(i)
@@ -23,5 +23,6 @@ func main() {
 		}
 		sum += value
 	}
+
 	fmt.Println(sum)
 }
