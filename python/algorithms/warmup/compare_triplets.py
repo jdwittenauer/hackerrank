@@ -1,7 +1,7 @@
 a = raw_input().strip().split(' ')
-a = map(lambda x: int(x), a)
+a = list(map(lambda x: int(x), a))
 b = raw_input().strip().split(' ')
-b = map(lambda x: int(x), b)
+b = list(map(lambda x: int(x), b))
 
 a_score = 0
 b_score = 0
