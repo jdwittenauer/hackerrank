@@ -1,7 +1,7 @@
 package algorithms.warmup
 
 object CompareTriplets {
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
     val a = scala.io.StdIn.readLine().split(" ").map(_.toInt)
     val b = scala.io.StdIn.readLine().split(" ").map(_.toInt)
 

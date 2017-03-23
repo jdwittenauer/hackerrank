@@ -29,7 +29,7 @@ func main() {
 	var a = ConvertToInt(strings.Split(s.Text(), " "))
 
 	var pos, neg, zero = 0, 0, 0
-	for x:= 0; x < n; x++ {
+	for x := 0; x < n; x++ {
 		if a[x] > 0 {
 			pos++
 		} else if a[x] < 0 {

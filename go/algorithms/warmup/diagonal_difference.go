@@ -35,14 +35,14 @@ func main() {
 	var s = bufio.NewScanner(os.Stdin)
 	var a = [][]int{}
 
-	for i:= 0; i < n; i++ {
+	for i := 0; i < n; i++ {
 		s.Scan()
 		var nums = ConvertToInt(strings.Split(s.Text(), " "))
 		a = append(a, nums)
 	}
 
 	var diag_1, diag_2 = 0, 0
-	for x:= 0; x < n; x++ {
+	for x := 0; x < n; x++ {
 		diag_1 += a[x][x]
 		diag_2 += a[x][(n - 1) - x]
 	}
