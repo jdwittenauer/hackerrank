@@ -269,3 +269,7 @@ docs/includes
 spec/fixtures/evil-files/
 out/
 /electron/
+
+
+# VS Code
+.vscode/
