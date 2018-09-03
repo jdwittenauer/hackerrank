@@ -1,6 +1,6 @@
-a = raw_input().strip().split(' ')
+a = input().strip().split(' ')
 a = list(map(lambda x: int(x), a))
-b = raw_input().strip().split(' ')
+b = input().strip().split(' ')
 b = list(map(lambda x: int(x), b))
 
 a_score = 0

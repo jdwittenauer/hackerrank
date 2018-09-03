@@ -1,7 +1,7 @@
 import sys
 
-a = [int(x) for x in raw_input().strip().split(' ')]
-min_val, max_val = sys.maxint, 0
+a = [int(x) for x in input().strip().split(' ')]
+min_val, max_val = sys.maxsize, 0
 
 for i in range(len(a)):
     sum_val = sum(a[:i]) + sum(a[i+1:])

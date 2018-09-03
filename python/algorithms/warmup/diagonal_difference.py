@@ -1,8 +1,8 @@
-n = int(raw_input().strip())
+n = int(input().strip())
 a = []
 
 for _ in range(n):
-    temp = [int(row) for row in raw_input().strip().split(' ')]
+    temp = [int(row) for row in input().strip().split(' ')]
     a.append(temp)
 
 diag_1 = sum([a[x][x] for x in range(n)])

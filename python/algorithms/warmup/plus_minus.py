@@ -1,5 +1,5 @@
-n = int(raw_input().strip())
-a = [int(x) for x in raw_input().strip().split(' ')]
+n = int(input().strip())
+a = [int(x) for x in input().strip().split(' ')]
 
 pos, neg, zero = 0, 0, 0
 for x in a:

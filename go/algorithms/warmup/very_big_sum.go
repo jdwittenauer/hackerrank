@@ -1,11 +1,11 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -15,7 +15,7 @@ func main() {
 	s.Scan()
 	var inputs = strings.Split(s.Text(), " ")
 
-	var sum int64 = 0
+	var sum int64
 	for _, i := range inputs {
 		value, err := strconv.ParseInt(i, 10, 64)
 		if err != nil {

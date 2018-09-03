@@ -1,14 +1,14 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
-	"strings"
 	"strconv"
+	"strings"
 )
 
-func ConvertToInt(sa []string) ([]int) {
+func ConvertToInt(sa []string) []int {
 	si := make([]int, 0, len(sa))
 	for _, a := range sa {
 		i, err := strconv.Atoi(a)
@@ -21,7 +21,7 @@ func ConvertToInt(sa []string) ([]int) {
 	return si
 }
 
-func Abs(n int) (int) {
+func Abs(n int) int {
 	if n < 0 {
 		n = -n
 	}
@@ -41,11 +41,11 @@ func main() {
 		a = append(a, nums)
 	}
 
-	var diag_1, diag_2 = 0, 0
+	var diag1, diag2 = 0, 0
 	for x := 0; x < n; x++ {
-		diag_1 += a[x][x]
-		diag_2 += a[x][(n - 1) - x]
+		diag1 += a[x][x]
+		diag2 += a[x][(n-1)-x]
 	}
 
-	fmt.Println(Abs(diag_1 - diag_2))
+	fmt.Println(Abs(diag1 - diag2))
 }
